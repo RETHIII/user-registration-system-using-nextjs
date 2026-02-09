@@ -1,0 +1,93 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center content */
+.overlay {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.overlay button {
+  padding: 12px 35px;
+  border: none;
+  border-radius: 25px;
+  background: #303841;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background: lightblue;
+  color:#303841;
+  font-weight: bold;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.overlay {
+  text-align: center;
+  max-width: 700px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 36px;
+  }
+
+  .overlay p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h1 {
+    font-size: 28px;
+  }
+
+  .overlay p {
+    font-size: 12px;
+  }
+
+  .overlay button {
+    width: 100%;
+  }
+}
